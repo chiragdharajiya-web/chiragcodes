@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
   },
+  // 🔑 Google Search Console Verification Tag
+  verification: {
+    google: 'eXW_5jLObvvoVGlA6PsgxoxHCnAGjdN6PL7KN_uWmDQ',
+  },
 }
 
 export default function Page() {
