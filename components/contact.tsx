@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Mail, Send, Check } from 'lucide-react'
-// ✅ Yahan se InstagramIcon hata diya hai taaki koi error na aaye
 import { LinkedinIcon, GithubIcon } from './brand-icons'
 import { useReveal } from './use-reveal'
 import { Magnetic } from './magnetic'
@@ -110,7 +109,6 @@ export function Contact() {
             external
           />
           
-          {/* ✅ Yahan humne direct pure SVG icon daal diya hai jo bina kisi external dependency ke chalega */}
           <Social
             href={INSTAGRAM}
             label="Instagram"

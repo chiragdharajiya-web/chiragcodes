@@ -7,26 +7,26 @@ import { Projects } from '@/components/projects'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
 
-// 🚀 Powerful SEO Metadata Configuration
+// 🚀 Advanced SEO & Site Name Configuration
 export const metadata: Metadata = {
-  title: 'Chirag Codes | Software & Mobile App Developer',
-  description: 'Portfolio of Chirag Codes, a passionate mobile application developer specializing in Flutter, Dart, and building clean, user-centric digital solutions.',
+  title: 'Chirag Dharajiya | Software & Mobile App Developer',
+  description: 'Portfolio of Chirag Dharajiya, a passionate mobile application developer specializing in Flutter, Dart, and building clean, user-centric digital solutions.',
   keywords: [
+    'Chirag Dharajiya',
     'Chirag Codes',
     'Chirag codes portfolio',
-    'Chirag Dharajiya',
     'Flutter Developer Chirag',
     'Mobile App Developer',
     'Software Developer Portfolio'
   ],
-  authors: [{ name: 'Chirag Codes' }],
+  authors: [{ name: 'Chirag Dharajiya' }],
   openGraph: {
-    title: 'Chirag Codes | Software & Mobile App Developer',
-    description: 'Explore the technical toolkit and portfolio of Chirag Codes.',
+    title: 'Chirag Dharajiya | Software & Mobile App Developer',
+    description: 'Explore the technical toolkit and portfolio of Chirag Dharajiya.',
     type: 'website',
     locale: 'en_US',
+    siteName: 'Chirag Dharajiya', // Google reads this for site name
   },
-  // 🔑 Google Search Console Verification Tag
   verification: {
     google: 'eXW_5jLObvvoVGlA6PsgxoxHCnAGjdN6PL7KN_uWmDQ',
   },
@@ -35,6 +35,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
+      {/* 🎯 Official Google Site Name Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Chirag Dharajiya",
+            "url": "https://chiragcodes.online"
+          }),
+        }}
+      />
+      
       <Navbar />
       <Hero />
       <About />
